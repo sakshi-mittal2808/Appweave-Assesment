@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,500;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+
+:root
+{
+    --box-shadow: 1.5rem 1rem rgba(0,0,0,0.1);
+    --outline: 0.1rem solid rgba(0,0,0,0.1);
+    --outline-hover: 0.2rem solid var(black);
+}
+
+*{
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+/* HEAD START */
+.header
+{
+    background-color: rgb(239, 222, 222);
+    display: flex;
+    min-width:82%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9%;
+}
+
+.logo
+{
+    display: inline-block;
+    padding-left: 10px;
+    font-size:2.5rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.header .logo i
+{
+    color: #000000;
+}
+
+.icons div
+{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    /* margin-left: 0.3rem; */
+    background-color: #eee;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icons div:hover
+{
+    background-color:orange;
+}
+
+label:hover
+{
+    color: orange;
+}
+
+/* Filter */
+
+.filterBox 
+{
+    background-color: #f3f3f3; /* Light color background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    width: 200px;
+    height: auto; /* Set height to auto */
+    display: inline-block;
+}
+
+.main
+{
+    
+    max-width: 1320px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.categoryList label
+{
+    margin-top: 5px;
+    display: block;
+    padding: 4px 0px;
+}
+
+/* Products */
+
+.product
+{
+    flex-basis: 75%;
+    display: flex;
+    /* yha s adjust ho rha, space-----> space btwn s 1 itm apne ko right and 2nd item left m display krega */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.productItem
+{
+    flex-basis: 31%;
+    /* border: 5px solid black; */
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 2px #ccc;
+    position: relative;
+    height: 50vh;
+}
+
+.productItem img
+{
+    width: 100%;
+    height: 300px;
+}
+
+.productName 
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+p,h3
+{
+    display: inline;
+    margin-left: 10px;
+}
+
+button
+{
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    color: lavender;
+    margin-left: 100px;
+}
+

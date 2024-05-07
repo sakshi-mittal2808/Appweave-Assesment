@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,500;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+
+:root
+{
+    --box-shadow: 1.5rem 1rem rgba(0,0,0,0.1);
+    --outline: 0.1rem solid rgba(0,0,0,0.1);
+    --outline-hover: 0.2rem solid var(black);
+}
+
+*{
+    font-family: 'Poppins',sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html
+{
+    font-size:62.5%;
+}
+
+/* HEAD START */
+.header
+{
+    background-color: white;
+    position: fixed;
+    display: flex;
+    min-width:82%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9%;
+    /* box-shadow: var(--box-shadow); */
+}
+
+.logo
+{
+    /* display: inline-block; */
+    padding-left: 10px;
+    font-size:2.5rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.navbar a
+{
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: black;
+}
+
+.navbar a:hover
+{
+    color: orange;
+}
+
+.icons div
+{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    margin-left: 0.3rem;
+    background-color: #eee;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icons div:hover
+{
+    background-color:orange;
+}
+
+/* .log-in
+{
+    position: absolute;
+    top:110%;
+    right:-110%;
+    width:30rem;
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    text-align: center;
+    border: 2px solid black;
+    border: 2px solid black;
+}
+
+.log-in.active
+{
+right:2rem;
+transition: .10s linear;
+}
+
+.log-in h1
+{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.log-in .box
+{
+    width: 100%;
+    margin:0.7rem 0;
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+}
+
+.log-in p
+{
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+}
+
+.log-in p a:hover
+{
+    color: orange;
+} */
+
+.btn
+{
+    margin-top: 1rem;
+    display:inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid black;
+    color:black;
+    cursor:pointer;
+}
+
+.btn:hover
+{
+    background-color: #59e1db;
+}
+
+/* HEAD END */
+
+/* HOME START */
+.home
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/tshirt.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.home .content
+{
+    text-align: center;
+    width: 80rem;
+}
+
+/* FEATURE START */
+
+.heading
+{
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 4.5rem;
+}
+
+.box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:3rem;
+}
+
+.box-container .box
+{
+    padding: 2rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.box-container .box:hover
+{
+    /* box-shadow: 1p 1px 10px 4px var(red); */
+    outline: var(--outline-hover);
+    /* outline-offset: 1rem; */
+}
+
+.box-container .box .btn:hover
+{
+    background-color: #59e1db;
+    color: black;
+}
+
+.box-container .box img
+{
+    margin: 1rem 0;
+    height: 25rem;
+}
+
+.box-container .box h3
+{
+    font-size: 2.5rem;
+    line-height: 1.8;
+}
+
+.features .box-container .box p
+{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: purple;
+}
+/* FEATURE END */
+
+/* Categories START */
+.product-slider
+{
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap:3rem;
+}
+
+.product-slider .box
+{
+    /* border: 1px solid red; */
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    /* outline-offset: -1rem; */
+    box-shadow: var(--box-shadow);
+}
+
+.product-slider .box:hover
+{
+    box-shadow: 10px 5px 10px rgb(237, 95, 211);
+}
+
+.product-slider .box img
+{
+    height:25rem;
+}
+
+.categories .product-slider .box a
+{
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: black;
+    cursor: pointer;
+}
+
+/* Reviews */
+.box-top
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+}
+.profile-img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile
+{
+    display: flex;
+    align-items: center;
+}
+
+.name strong
+{
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.name span
+{
+    color: #979797;
+    font-size: 0.8rem;
+}
+
+.view
+{
+    margin-left: auto;
+}
+
+.name
+{
+    padding-left: 10px;
+}
+.view i
+{
+    color: #f9d71c;
+}
+
+.review .box
+{
+    padding-bottom: 2rem;
+}
+/* Footer */
+.footer .boxc
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .boxc .block h3
+{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .boxc .block h3 i
+{
+    color: #7AA874;
+}
+
+.footer .boxc .block a
+{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .boxc .block a i
+{
+    color: #7AA874;
+    padding: 0.5rem;
+}
+
+.footer .boxc .block h1
+{
+    display: inline-block;
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 30%;
+}
+
+.footer .boxc .block .share a
+{
+    width: 4rem; 
+    line-height: 4rem;
+    font-size: 2rem;
+    margin-left: 0.2rem;
+    text-align: center;
+    padding-left: 5rem;
+}
+
+/* media */ 
+@media(max-width:991px)
+{
+    html
+    {
+        font-size:55%
+    }
+
+    .header
+    {
+        padding: 2rem;
+    }
+
+    section
+    {
+        padding: 2rem;
+    }
+
+    .product-slider .box-container
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        gap:3rem;
+    }
+    
+    .product-slider .box-container img
+    {
+        width:300px;
+    }
+}
+
+@media(max-width: 760px)
+{
+    #menu-btn
+    {
+        display: inline-block;
+    }
+
+    .header
+    {
+        min-width: 95%;
+    }
+
+    .header .navbar
+    {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: 0.5rem;
+        background: #fff;
+    }
+
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .header .navbar.active
+    {
+        right:2rem;
+        transition: .10s linear;
+    }
+
+    .product-slider .box-container
+    {
+        display: inline;
+        /* grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        gap:3rem; */
+    }
+}
+
+.error
+{
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
